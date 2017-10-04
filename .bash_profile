@@ -7,7 +7,7 @@ BLUE=`tput setaf 4`
 RESET_COLOR=`tput sgr0`
 
 TOOL_HOME=~/data/tool
-echo tool directory: $BLUE$TOOL_HOME]$RESET_COLOR
+echo tool directory: [$BLUE$TOOL_HOME]$RESET_COLOR
 
 SCALA_HOME=$TOOL_HOME/scala/scala-2.10.2
 SBT_BIN=$TOOL_HOME/sbt/bin
