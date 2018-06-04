@@ -29,6 +29,7 @@ export PATH=$PATH:$GIT_HOME/bin:$MAVEN_BIN:$SBT_BIN:$BIN_HOME:$ANDROID_HOME/tool
 
 # print the version of the tools
 echo sbt version: $GREEN$(sbt --version 2>&1 | grep version | cut -d ' ' -f4)$RESET_COLOR
+#echo sbt version: $GREEN$(sbt about 2>&1 | grep 'This is' | cut -d ' ' -f5)$RESET_COLOR
 echo maven version: $GREEN$(mvn -version 2>&1 | grep Apache | cut -d' ' -f3)$RESET_COLOR
 echo python version: $GREEN$(python --version 2>&1 | cut -d' ' -f2)$RESET_COLOR
 echo java version: $GREEN$(java -version 2>&1 | awk -F '"' '/version/ {print $2}')$RESET_COLOR
